@@ -3,710 +3,268 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101c35">
 <title>NEXORA BANK | Banking Beyond Boundaries</title>
 
 <style>
 :root {
-  --navy: #101c35;
-  --navy2: #182b4d;
-  --gold: #c9a54c;
-  --white: #ffffff;
-  --light: #f5f7fb;
-  --text: #26344b;
-  --muted: #718096;
-  --border: #e5e9f0;
+  --navy:#101c35;
+  --navy2:#182b4d;
+  --gold:#c9a54c;
+  --white:#fff;
+  --light:#f5f7fb;
+  --text:#26344b;
+  --muted:#718096;
+  --border:#e5e9f0;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: var(--white);
-  color: var(--text);
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-}
-
-.container {
-  width: min(1120px, 90%);
-  margin: auto;
-}
-
-/* TOP BAR */
+* {box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body {font-family:Arial,sans-serif;color:var(--text);line-height:1.6}
+a {text-decoration:none;color:inherit}
+button {font-family:inherit;cursor:pointer}
+.container {width:min(1120px,90%);margin:auto}
 
 .topbar {
-  background: var(--navy);
-  color: #e5eaf3;
-  padding: 9px 0;
-  font-size: 12px;
-  text-align: center;
+  background:var(--navy);color:#e5eaf3;
+  padding:9px;text-align:center;font-size:12px
 }
-
-/* NAVIGATION */
-
 .navbar {
-  background: white;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background:white;border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:100
 }
-
 .nav-content {
-  min-height: 76px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  min-height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px
 }
-
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-  color: var(--navy);
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  display:flex;align-items:center;gap:11px;
+  color:var(--navy);font-size:20px;font-weight:800;
+  letter-spacing:1px
 }
-
 .logo-mark {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  background: var(--navy);
-  color: var(--gold);
-  border-radius: 10px;
-  font-size: 20px;
+  width:40px;height:40px;display:grid;place-items:center;
+  background:var(--navy);color:var(--gold);
+  border-radius:10px;font-size:20px
 }
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.nav-links a:hover {
-  color: var(--gold);
-}
-
-.nav-actions {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
+.nav-links {display:flex;align-items:center;gap:22px;font-size:14px;font-weight:600}
+.nav-links a:hover {color:var(--gold)}
+.nav-actions {display:flex;gap:10px;align-items:center}
 .menu-toggle {
-  display: none;
-  border: 0;
-  background: transparent;
-  color: var(--navy);
-  font-size: 27px;
+  display:none;border:0;background:transparent;
+  color:var(--navy);font-size:27px
 }
-
-/* BUTTONS */
-
 .btn {
-  border: 0;
-  border-radius: 7px;
-  padding: 12px 19px;
-  font-weight: 700;
-  font-size: 13px;
-  transition: .2s;
+  border:0;border-radius:7px;padding:12px 19px;
+  font-weight:700;font-size:13px;transition:.2s
 }
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn-gold {
-  background: var(--gold);
-  color: var(--navy);
-}
-
-.btn-dark {
-  background: var(--navy);
-  color: white;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid var(--gold);
-  color: var(--navy);
-}
-
-/* HERO */
+.btn:hover {transform:translateY(-2px)}
+.btn-gold {background:var(--gold);color:var(--navy)}
+.btn-dark {background:var(--navy);color:white}
+.btn-outline {background:transparent;border:1px solid var(--gold);color:var(--navy)}
 
 .hero {
-  background:
-    radial-gradient(circle at 85% 20%, #29436a 0, transparent 34%),
-    linear-gradient(120deg, #101c35, #1a3155);
-  color: white;
-  padding: 100px 0 95px;
-  overflow: hidden;
+  background:radial-gradient(circle at 85% 20%,#29436a 0,transparent 34%),
+  linear-gradient(120deg,#101c35,#1a3155);
+  color:white;padding:100px 0 95px;overflow:hidden
 }
-
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  align-items: center;
-  gap: 55px;
+  display:grid;grid-template-columns:1.2fr .8fr;
+  align-items:center;gap:55px
 }
-
 .eyebrow {
-  color: var(--gold);
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+  color:var(--gold);font-size:12px;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:16px
 }
-
-.hero h1 {
-  font-size: clamp(38px, 5vw, 60px);
-  line-height: 1.12;
-  margin-bottom: 22px;
-  max-width: 650px;
-}
-
-.hero h1 span {
-  color: var(--gold);
-}
-
-.hero p {
-  color: #d0d8e6;
-  font-size: 16px;
-  max-width: 560px;
-  margin-bottom: 28px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 13px;
-  flex-wrap: wrap;
-}
-
-.hero-note {
-  margin-top: 22px;
-  color: #b9c5d8;
-  font-size: 12px;
-}
-
-/* HERO CARD */
-
+.hero h1 {font-size:clamp(38px,5vw,60px);line-height:1.12;margin-bottom:22px}
+.hero h1 span {color:var(--gold)}
+.hero p {color:#d0d8e6;font-size:16px;max-width:560px;margin-bottom:28px}
+.hero-buttons {display:flex;gap:13px;flex-wrap:wrap}
+.hero-note {margin-top:22px;color:#b9c5d8;font-size:12px}
 .hero-card {
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.17);
-  border-radius: 17px;
-  padding: 30px;
-  box-shadow: 0 25px 65px rgba(0,0,0,.2);
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.17);
+  border-radius:17px;padding:30px;
+  box-shadow:0 25px 65px rgba(0,0,0,.2)
 }
-
-.card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
+.card-top {display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
 .card-chip {
-  width: 43px;
-  height: 33px;
-  background: linear-gradient(135deg, #e4c779, #a77d2d);
-  border-radius: 7px;
+  width:43px;height:33px;
+  background:linear-gradient(135deg,#e4c779,#a77d2d);
+  border-radius:7px
 }
+.card-label {color:#d8dfeb;font-size:12px}
+.card-name {font-size:19px;font-weight:800;letter-spacing:2px;margin-bottom:8px}
+.card-tag {color:var(--gold);font-size:12px;letter-spacing:1px}
 
-.card-label {
-  color: #d8dfeb;
-  font-size: 12px;
-}
-
-.card-name {
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-.card-tag {
-  color: var(--gold);
-  font-size: 12px;
-  letter-spacing: 1px;
-}
-
-/* GENERAL SECTIONS */
-
-.section {
-  padding: 85px 0;
-}
-
-.section-heading {
-  text-align: center;
-  max-width: 650px;
-  margin: 0 auto 45px;
-}
-
+.section {padding:85px 0}
+.section-heading {text-align:center;max-width:650px;margin:0 auto 45px}
 .section-heading h2 {
-  color: var(--navy);
-  font-size: clamp(27px, 4vw, 38px);
-  line-height: 1.2;
-  margin-bottom: 13px;
+  color:var(--navy);font-size:clamp(27px,4vw,38px);
+  line-height:1.2;margin-bottom:13px
 }
+.section-heading p {color:var(--muted);font-size:15px}
+.light-section {background:var(--light)}
 
-.section-heading p {
-  color: var(--muted);
-  font-size: 15px;
-}
-
-.light-section {
-  background: var(--light);
-}
-
-/* FEATURES */
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
+.feature-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .feature-card {
-  background: white;
-  border: 1px solid var(--border);
-  padding: 28px;
-  border-radius: 12px;
-  transition: .2s;
+  background:white;border:1px solid var(--border);
+  padding:28px;border-radius:12px;transition:.2s
 }
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(16,28,53,.08);
-}
-
+.feature-card:hover {transform:translateY(-5px);box-shadow:0 12px 30px rgba(16,28,53,.08)}
 .feature-icon {
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  background: #f8f0dc;
-  color: #9a762d;
-  border-radius: 10px;
-  font-size: 23px;
-  margin-bottom: 20px;
+  width:48px;height:48px;display:grid;place-items:center;
+  background:#f8f0dc;color:#9a762d;border-radius:10px;
+  font-size:23px;margin-bottom:20px
 }
-
-.feature-card h3 {
-  color: var(--navy);
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.feature-card p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-/* ABOUT */
+.feature-card h3 {color:var(--navy);margin-bottom:10px;font-size:18px}
+.feature-card p {color:var(--muted);font-size:14px}
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 55px;
-  align-items: center;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:55px;align-items:center
 }
+.about-panel {background:var(--navy);color:white;border-radius:15px;padding:38px}
+.about-panel h3 {font-size:26px;margin-bottom:16px}
+.about-panel p {color:#cbd5e4;font-size:14px}
+.about-content h2 {color:var(--navy);font-size:34px;line-height:1.2;margin-bottom:17px}
+.about-content p {color:var(--muted);margin-bottom:16px}
 
-.about-panel {
-  background: var(--navy);
-  color: white;
-  border-radius: 15px;
-  padding: 38px;
-}
-
-.about-panel h3 {
-  font-size: 26px;
-  margin-bottom: 16px;
-}
-
-.about-panel p {
-  color: #cbd5e4;
-  font-size: 14px;
-}
-
-.about-content h2 {
-  color: var(--navy);
-  font-size: 34px;
-  line-height: 1.2;
-  margin-bottom: 17px;
-}
-
-.about-content p {
-  color: var(--muted);
-  margin-bottom: 16px;
-}
-
-/* CURRENCIES */
-
-.currency-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
+.currency-grid {display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
 .currency-card {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 26px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
+  background:white;border:1px solid var(--border);
+  border-radius:12px;padding:26px;display:flex;align-items:center;gap:18px
 }
-
 .currency-symbol {
-  width: 55px;
-  height: 55px;
-  display: grid;
-  place-items: center;
-  background: var(--navy);
-  color: var(--gold);
-  font-size: 25px;
-  font-weight: 800;
-  border-radius: 12px;
+  width:55px;height:55px;display:grid;place-items:center;
+  background:var(--navy);color:var(--gold);
+  font-size:25px;font-weight:800;border-radius:12px
 }
+.currency-card h3 {color:var(--navy);font-size:19px}
+.currency-card p {color:var(--muted);font-size:13px}
 
-.currency-card h3 {
-  color: var(--navy);
-  font-size: 19px;
-}
+.security-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.security-card {padding:25px;background:white;border:1px solid var(--border);border-radius:12px}
+.security-card h3 {color:var(--navy);font-size:17px;margin:12px 0 8px}
+.security-card p {color:var(--muted);font-size:14px}
 
-.currency-card p {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-/* SECURITY */
-
-.security-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.security-card {
-  padding: 25px;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-}
-
-.security-card h3 {
-  color: var(--navy);
-  font-size: 17px;
-  margin: 12px 0 8px;
-}
-
-.security-card p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-/* FAQ */
-
-.faq-list {
-  max-width: 800px;
-  margin: auto;
-}
-
-.faq-item {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 9px;
-  margin-bottom: 13px;
-  overflow: hidden;
-}
-
+.faq-list {max-width:800px;margin:auto}
+.faq-item {background:white;border:1px solid var(--border);border-radius:9px;margin-bottom:13px;overflow:hidden}
 .faq-question {
-  padding: 19px 21px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  cursor: pointer;
-  color: var(--navy);
-  font-weight: 700;
+  padding:19px 21px;display:flex;align-items:center;
+  justify-content:space-between;gap:15px;cursor:pointer;
+  color:var(--navy);font-weight:700
 }
-
-.faq-question span {
-  color: var(--gold);
-  font-size: 23px;
-}
-
-.faq-answer {
-  display: none;
-  padding: 0 21px 19px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-.faq-item.active .faq-answer {
-  display: block;
-}
-
-/* CONTACT */
+.faq-question span {color:var(--gold);font-size:23px}
+.faq-answer {display:none;padding:0 21px 19px;color:var(--muted);font-size:14px}
+.faq-item.active .faq-answer {display:block}
 
 .contact-card {
-  max-width: 750px;
-  margin: auto;
-  text-align: center;
-  padding: 35px;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 13px;
+  max-width:750px;margin:auto;text-align:center;padding:35px;
+  background:white;border:1px solid var(--border);border-radius:13px
 }
-
-.contact-card h3 {
-  color: var(--navy);
-  font-size: 23px;
-  margin-bottom: 10px;
-}
-
-.contact-card p {
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
+.contact-card h3 {color:var(--navy);font-size:23px;margin-bottom:10px}
+.contact-card p {color:var(--muted);margin-bottom:18px}
 .notice {
-  background: #fff8e8;
-  border: 1px solid #ead8a9;
-  color: #70551c;
-  padding: 14px;
-  border-radius: 8px;
-  font-size: 13px;
+  background:#fff8e8;border:1px solid #ead8a9;color:#70551c;
+  padding:14px;border-radius:8px;font-size:13px
 }
 
-/* FOOTER */
-
-.footer {
-  background: #0b1528;
-  color: white;
-  padding: 55px 0 20px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 35px;
-  margin-bottom: 40px;
-}
-
-.footer h3 {
-  margin-bottom: 15px;
-  color: var(--gold);
-}
-
-.footer p,
-.footer a {
-  display: block;
-  color: #b9c5d8;
-  font-size: 13px;
-  margin-bottom: 9px;
-}
-
-.footer a:hover {
-  color: var(--gold);
-}
-
+.footer {background:#0b1528;color:white;padding:55px 0 20px}
+.footer-grid {display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px;margin-bottom:40px}
+.footer h3 {margin-bottom:15px;color:var(--gold)}
+.footer p,.footer a {display:block;color:#b9c5d8;font-size:13px;margin-bottom:9px}
+.footer a:hover {color:var(--gold)}
 .footer-bottom {
-  border-top: 1px solid #28354a;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  color: #91a0b6;
-  font-size: 12px;
+  border-top:1px solid #28354a;padding-top:20px;
+  display:flex;justify-content:space-between;flex-wrap:wrap;
+  gap:10px;color:#91a0b6;font-size:12px
 }
 
-/* PORTAL */
-
-.portal {
-  display: none;
-  min-height: 70vh;
-  padding: 75px 0;
-  background: var(--light);
-}
-
+/* LOGIN AND REGISTRATION */
+.portal {display:none;min-height:70vh;padding:65px 0;background:var(--light)}
 .portal-box {
-  position: relative;
-  max-width: 550px;
-  margin: auto;
-  padding: 40px;
-  text-align: center;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 15px;
-  box-shadow: 0 15px 40px rgba(16,28,53,.08);
+  position:relative;max-width:550px;margin:auto;padding:38px;
+  text-align:center;background:white;border:1px solid var(--border);
+  border-radius:15px;box-shadow:0 15px 40px rgba(16,28,53,.08)
 }
-
-.portal-box h2 {
-  color: var(--navy);
-  font-size: 29px;
-  margin-bottom: 12px;
-}
-
-.portal-box p {
-  color: var(--muted);
-  margin-bottom: 20px;
-}
-
+.portal-box h2 {color:var(--navy);font-size:29px;margin-bottom:10px}
+.portal-box > p {color:var(--muted);margin-bottom:20px}
 .portal-close {
-  position: absolute;
-  right: 17px;
-  top: 12px;
-  border: 0;
-  background: transparent;
-  color: var(--navy);
-  font-size: 28px;
+  position:absolute;right:17px;top:12px;border:0;
+  background:transparent;color:var(--navy);font-size:28px
 }
-
+.auth-form {text-align:left;margin-top:22px}
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width:100%;padding:14px 15px;margin:0 0 14px;
+  border:1px solid var(--border);border-radius:8px;
+  background:white;color:var(--text);font-size:14px;outline:none
+}
+.auth-form input:focus {border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,165,76,.13)}
+.auth-form label {color:var(--muted);font-size:13px}
+.auth-form button {width:100%;margin-top:14px}
+.auth-links {
+  display:flex;justify-content:space-between;gap:12px;
+  flex-wrap:wrap;margin:16px 0 5px;font-size:13px
+}
+.auth-links a {color:#8a6825;font-weight:700}
+.auth-message {
+  min-height:22px;margin:15px 0;font-size:13px;
+  color:var(--navy);overflow-wrap:anywhere
+}
+.auth-message.error {color:#a52b2b}
+.auth-message.success {color:#247044}
+.auth-state {
+  padding:18px;margin:20px 0;border:1px solid var(--border);
+  border-radius:10px;background:var(--light);overflow-wrap:anywhere
+}
+.auth-state strong {color:var(--navy)}
+.auth-state p {margin:8px 0 15px;font-size:13px}
 .portal-message {
-  background: #fff8e8;
-  border: 1px solid #ead8a9;
-  padding: 17px;
-  border-radius: 9px;
-  color: #70551c;
-  font-size: 13px;
-  margin-bottom: 22px;
+  background:#fff8e8;border:1px solid #ead8a9;padding:15px;
+  border-radius:9px;color:#70551c;font-size:13px;margin:20px 0
 }
+.auth-small {font-size:12px;color:var(--muted);margin-top:15px;line-height:1.5}
+.auth-form button:disabled {opacity:.6;cursor:wait}
 
-/* MOBILE */
-
-@media (max-width: 850px) {
+@media(max-width:850px) {
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 76px;
-    left: 0;
-    width: 100%;
-    padding: 22px 5%;
-    background: white;
-    border-bottom: 1px solid var(--border);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
+    display:none;position:absolute;top:76px;left:0;width:100%;
+    padding:22px 5%;background:white;border-bottom:1px solid var(--border);
+    flex-direction:column;align-items:flex-start;gap:18px
   }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-actions .btn-outline {
-    display: none;
-  }
-
-  .hero-grid,
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    padding: 75px 0;
-  }
-
-  .hero-card {
-    max-width: 500px;
-  }
-
-  .feature-grid,
-  .security-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .nav-links.open {display:flex}
+  .menu-toggle {display:block}
+  .nav-actions .btn-outline {display:none}
+  .hero-grid,.about-grid {grid-template-columns:1fr}
+  .hero {padding:75px 0}
+  .hero-card {max-width:500px}
+  .feature-grid,.security-grid {grid-template-columns:repeat(2,1fr)}
 }
-
-@media (max-width: 560px) {
-  .nav-content {
-    min-height: 68px;
-  }
-
-  .logo {
-    font-size: 17px;
-  }
-
-  .logo-mark {
-    width: 35px;
-    height: 35px;
-  }
-
-  .nav-links {
-    top: 68px;
-  }
-
-  .hero {
-    padding: 65px 0;
-  }
-
-  .hero h1 {
-    font-size: 39px;
-  }
-
-  .section {
-    padding: 65px 0;
-  }
-
-  .feature-grid,
-  .security-grid,
-  .currency-grid,
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-panel,
-  .portal-box {
-    padding: 25px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-  }
+@media(max-width:560px) {
+  .nav-content {min-height:68px}
+  .logo {font-size:17px}
+  .logo-mark {width:35px;height:35px}
+  .nav-links {top:68px}
+  .hero {padding:65px 0}
+  .hero h1 {font-size:39px}
+  .section {padding:65px 0}
+  .feature-grid,.security-grid,.currency-grid,.footer-grid {grid-template-columns:1fr}
+  .about-panel,.portal-box {padding:25px}
+  .footer-bottom {flex-direction:column}
 }
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-  NEXORA BANK — A digital banking concept
-</div>
+<div class="topbar">NEXORA BANK — A digital banking concept</div>
 
 <header class="navbar">
   <div class="container nav-content">
-
     <a href="#home" class="logo">
-      <span class="logo-mark">N</span>
-      NEXORA BANK
+      <span class="logo-mark">N</span>NEXORA BANK
     </a>
 
     <nav class="nav-links" id="navLinks">
@@ -719,53 +277,30 @@ button {
     </nav>
 
     <div class="nav-actions">
-      <button class="btn btn-outline" onclick="openPortal('login')">
-        Login
-      </button>
-      <button class="btn btn-gold" onclick="openPortal('register')">
-        Get Started
-      </button>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
-        ☰
-      </button>
+      <button class="btn btn-outline" onclick="openPortal('login')">Login</button>
+      <button class="btn btn-gold" onclick="openPortal('register')">Get Started</button>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
     </div>
-
   </div>
 </header>
 
 <main id="mainSite">
 
-<!-- HERO -->
-
 <section class="hero" id="home">
   <div class="container hero-grid">
-
     <div>
       <div class="eyebrow">The future of digital banking</div>
-
-      <h1>
-        Banking Beyond <span>Boundaries.</span>
-      </h1>
-
+      <h1>Banking Beyond <span>Boundaries.</span></h1>
       <p>
         Discover a modern approach to financial services.
         NEXORA BANK is a proposed digital banking platform
         built around convenience, innovation and trust.
       </p>
-
       <div class="hero-buttons">
-        <button class="btn btn-gold" onclick="openPortal('register')">
-          Explore NEXORA
-        </button>
-
-        <a href="#about" class="btn btn-outline" style="color:white">
-          Discover More
-        </a>
+        <button class="btn btn-gold" onclick="openPortal('register')">Explore NEXORA</button>
+        <a href="#about" class="btn btn-outline" style="color:white">Discover More</a>
       </div>
-
-      <div class="hero-note">
-        A website concept. Banking services are not yet available.
-      </div>
+      <div class="hero-note">A website concept. Banking services are not yet available.</div>
     </div>
 
     <div class="hero-card">
@@ -773,363 +308,171 @@ button {
         <div class="card-chip"></div>
         <div class="card-label">DIGITAL BANKING CONCEPT</div>
       </div>
-
       <div class="card-name">NEXORA</div>
       <div class="card-tag">BANKING BEYOND BOUNDARIES</div>
     </div>
-
   </div>
 </section>
-
-<!-- SERVICES -->
 
 <section class="section" id="services">
   <div class="container">
-
     <div class="section-heading">
       <div class="eyebrow">What we envision</div>
       <h2>Designed for modern banking</h2>
-      <p>
-        Explore the services planned for the NEXORA BANK platform.
-        These are proposed features, not currently active financial services.
-      </p>
+      <p>Explore the services planned for the NEXORA BANK platform. These are proposed features, not currently active financial services.</p>
     </div>
 
     <div class="feature-grid">
-
-      <div class="feature-card">
-        <div class="feature-icon">↗</div>
-        <h3>Digital Transfers</h3>
-        <p>
-          A proposed convenient transfer experience
-          for future authorized customers.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">₦</div>
-        <h3>Multi-Currency</h3>
-        <p>
-          A concept designed around Nigerian Naira
-          and United States Dollar information.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">◈</div>
-        <h3>Account Services</h3>
-        <p>
-          A future account management experience,
-          subject to regulatory approval.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">⌂</div>
-        <h3>Mobile Experience</h3>
-        <p>
-          A responsive interface designed to work
-          across phones, tablets and computers.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">♧</div>
-        <h3>Customer Support</h3>
-        <p>
-          A proposed support experience to help
-          customers find answers and assistance.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">✓</div>
-        <h3>Security First</h3>
-        <p>
-          Security-focused design principles
-          for future authorized banking services.
-        </p>
-      </div>
-
+      <div class="feature-card"><div class="feature-icon">↗</div><h3>Digital Transfers</h3><p>A proposed convenient transfer experience for future authorized customers.</p></div>
+      <div class="feature-card"><div class="feature-icon">₦</div><h3>Multi-Currency</h3><p>A concept designed around Nigerian Naira and United States Dollar information.</p></div>
+      <div class="feature-card"><div class="feature-icon">◈</div><h3>Account Services</h3><p>A future account management experience, subject to regulatory approval.</p></div>
+      <div class="feature-card"><div class="feature-icon">⌂</div><h3>Mobile Experience</h3><p>A responsive interface designed to work across phones, tablets and computers.</p></div>
+      <div class="feature-card"><div class="feature-icon">♧</div><h3>Customer Support</h3><p>A proposed support experience to help customers find answers and assistance.</p></div>
+      <div class="feature-card"><div class="feature-icon">✓</div><h3>Security First</h3><p>Security-focused design principles for future authorized banking services.</p></div>
     </div>
   </div>
 </section>
-
-<!-- ABOUT -->
 
 <section class="section light-section" id="about">
   <div class="container about-grid">
-
     <div class="about-panel">
       <div class="eyebrow">Our direction</div>
       <h3>A new vision for digital finance.</h3>
-      <p>
-        NEXORA BANK represents a vision of accessible,
-        convenient and thoughtfully designed financial technology.
-      </p>
+      <p>NEXORA BANK represents a vision of accessible, convenient and thoughtfully designed financial technology.</p>
     </div>
-
     <div class="about-content">
       <div class="eyebrow">About NEXORA</div>
       <h2>Innovation with a purpose.</h2>
-
-      <p>
-        We believe digital financial experiences should
-        be simple to understand, easy to navigate and
-        designed with customer needs in mind.
-      </p>
-
-      <p>
-        Our goal is to develop a professional platform
-        that can grow responsibly through the appropriate
-        financial partnerships and regulatory approvals.
-      </p>
-
-      <button class="btn btn-dark" onclick="openPortal('register')">
-        Learn About Our Vision
-      </button>
+      <p>We believe digital financial experiences should be simple to understand, easy to navigate and designed with customer needs in mind.</p>
+      <p>Our goal is to develop a professional platform that can grow responsibly through appropriate financial partnerships and regulatory approvals.</p>
+      <button class="btn btn-dark" onclick="openPortal('register')">Learn About Our Vision</button>
     </div>
-
   </div>
 </section>
-
-<!-- CURRENCIES -->
 
 <section class="section" id="currencies">
   <div class="container">
-
     <div class="section-heading">
       <div class="eyebrow">Currency support vision</div>
       <h2>Built with global possibilities</h2>
-      <p>
-        The platform concept highlights two currencies
-        relevant to its intended audience.
-      </p>
+      <p>The platform concept highlights two currencies relevant to its intended audience.</p>
     </div>
-
     <div class="currency-grid">
-
-      <div class="currency-card">
-        <div class="currency-symbol">₦</div>
-        <div>
-          <h3>Nigerian Naira</h3>
-          <p>NGN — Nigeria</p>
-        </div>
-      </div>
-
-      <div class="currency-card">
-        <div class="currency-symbol">$</div>
-        <div>
-          <h3>US Dollar</h3>
-          <p>USD — United States</p>
-        </div>
-      </div>
-
+      <div class="currency-card"><div class="currency-symbol">₦</div><div><h3>Nigerian Naira</h3><p>NGN — Nigeria</p></div></div>
+      <div class="currency-card"><div class="currency-symbol">$</div><div><h3>US Dollar</h3><p>USD — United States</p></div></div>
     </div>
   </div>
 </section>
-
-<!-- SECURITY -->
 
 <section class="section light-section">
   <div class="container">
-
     <div class="section-heading">
       <div class="eyebrow">Our principles</div>
       <h2>Trust starts with responsibility</h2>
-      <p>
-        The principles guiding the NEXORA BANK concept.
-      </p>
+      <p>The principles guiding the NEXORA BANK concept.</p>
     </div>
-
     <div class="security-grid">
-
-      <div class="security-card">
-        <div class="feature-icon">◆</div>
-        <h3>Privacy Awareness</h3>
-        <p>
-          Respecting the importance of personal
-          and financial information.
-        </p>
-      </div>
-
-      <div class="security-card">
-        <div class="feature-icon">✓</div>
-        <h3>Transparency</h3>
-        <p>
-          Clear information about what the platform
-          can and cannot currently do.
-        </p>
-      </div>
-
-      <div class="security-card">
-        <div class="feature-icon">◎</div>
-        <h3>Responsible Innovation</h3>
-        <p>
-          Developing financial technology with
-          appropriate approvals and safeguards.
-        </p>
-      </div>
-
+      <div class="security-card"><div class="feature-icon">◆</div><h3>Privacy Awareness</h3><p>Respecting the importance of personal and financial information.</p></div>
+      <div class="security-card"><div class="feature-icon">✓</div><h3>Transparency</h3><p>Clear information about what the platform can and cannot currently do.</p></div>
+      <div class="security-card"><div class="feature-icon">◎</div><h3>Responsible Innovation</h3><p>Developing financial technology with appropriate approvals and safeguards.</p></div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-
 <section class="section" id="faq">
   <div class="container">
-
     <div class="section-heading">
       <div class="eyebrow">Frequently asked questions</div>
       <h2>Questions about NEXORA</h2>
       <p>Find answers to common questions about this platform.</p>
     </div>
-
     <div class="faq-list">
-
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          What is NEXORA BANK?
-          <span>+</span>
-        </div>
-        <div class="faq-answer">
-          NEXORA BANK is a proposed digital banking website concept
-          focused on a modern and accessible financial experience.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          Can I open a real bank account?
-          <span>+</span>
-        </div>
-        <div class="faq-answer">
-          No. Real account opening is not available.
-          It would require an appropriately licensed financial
-          institution and the necessary regulatory approvals.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          Can I deposit or transfer money?
-          <span>+</span>
-        </div>
-        <div class="faq-answer">
-          No. This website does not accept deposits,
-          hold funds or process financial transfers.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          Which currencies are featured?
-          <span>+</span>
-        </div>
-        <div class="faq-answer">
-          The concept currently highlights Nigerian Naira (NGN)
-          and United States Dollar (USD).
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          When will banking services become available?
-          <span>+</span>
-        </div>
-        <div class="faq-answer">
-          No launch date has been announced.
-          Financial services would only be introduced after
-          the required partnerships and regulatory approvals.
-        </div>
-      </div>
-
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What is NEXORA BANK?<span>+</span></div><div class="faq-answer">NEXORA BANK is a proposed digital banking website concept focused on a modern and accessible financial experience.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Can I open a real bank account?<span>+</span></div><div class="faq-answer">No. Real account opening is not available. It would require an appropriately licensed financial institution and the necessary regulatory approvals.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Can I deposit or transfer money?<span>+</span></div><div class="faq-answer">No. This website does not accept deposits, hold funds or process financial transfers.</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Which currencies are featured?<span>+</span></div><div class="faq-answer">The concept currently highlights Nigerian Naira (NGN) and United States Dollar (USD).</div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">When will banking services become available?<span>+</span></div><div class="faq-answer">No launch date has been announced. Financial services would only be introduced after the required partnerships and regulatory approvals.</div></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-
 <section class="section light-section" id="contact">
   <div class="container">
-
     <div class="section-heading">
       <div class="eyebrow">Get in touch</div>
       <h2>Connect with NEXORA</h2>
-      <p>
-        Follow the development of this digital banking concept.
-      </p>
+      <p>Follow the development of this digital banking concept.</p>
     </div>
-
     <div class="contact-card">
       <h3>Customer Support</h3>
-      <p>
-        Official support channels will be announced
-        when they are ready.
-      </p>
-
-      <div class="notice">
-        NEXORA BANK is not currently a licensed bank.
-        Never submit passwords, PINs, card details,
-        OTP codes or financial information on this website.
-      </div>
+      <p>Official support channels will be announced when they are ready.</p>
+      <div class="notice">NEXORA BANK is not currently a licensed bank. Never submit passwords, PINs, card details, OTP codes or financial information on this website.</div>
     </div>
-
   </div>
 </section>
 
 </main>
 
-<!-- LOGIN / REGISTRATION INFORMATION -->
-
+<!-- CUSTOMER LOGIN AND REGISTRATION -->
 <section class="portal" id="portal">
   <div class="container">
-
     <div class="portal-box">
-
-      <button class="portal-close"
-        onclick="closePortal()"
-        aria-label="Close">
-        ×
-      </button>
-
+      <button class="portal-close" onclick="closePortal()" aria-label="Close">×</button>
       <div class="logo-mark" style="margin:0 auto 20px">N</div>
-
       <h2 id="portalTitle">Welcome to NEXORA</h2>
+      <p id="portalDescription">Your NEXORA website account</p>
 
-      <p id="portalDescription">
-        Explore the NEXORA BANK concept.
-      </p>
+      <form class="auth-form" id="loginForm" onsubmit="loginUser(event)">
+        <input type="email" id="loginEmail" placeholder="Email address" autocomplete="email" required>
+        <input type="password" id="loginPassword" placeholder="Password" autocomplete="current-password" required>
+        <label><input type="checkbox" onchange="togglePassword('loginPassword',this)"> Show password</label>
+        <label style="display:block;margin-top:13px"><input type="checkbox" id="rememberMe" checked> Keep me signed in on this device</label>
+        <button class="btn btn-dark" id="loginButton" type="submit">Sign In</button>
+        <div class="auth-links">
+          <a href="#" onclick="resetPassword();return false;">Forgot password?</a>
+          <a href="#" onclick="showRegister();return false;">Create an account</a>
+        </div>
+      </form>
 
-      <div class="portal-message" id="portalMessage">
-        Banking services are not currently available.
+      <form class="auth-form" id="registerForm" onsubmit="registerUser(event)" style="display:none">
+        <input type="text" id="registerName" placeholder="Your name or display name" autocomplete="name" maxlength="60" required>
+        <input type="email" id="registerEmail" placeholder="Email address" autocomplete="email" required>
+        <input type="password" id="registerPassword" placeholder="Create a password (at least 6 characters)" autocomplete="new-password" minlength="6" required>
+        <label><input type="checkbox" onchange="togglePassword('registerPassword',this)"> Show password</label>
+        <button class="btn btn-gold" id="registerButton" type="submit">Create Website Account</button>
+        <div class="auth-links">
+          <a href="#" onclick="showLogin();return false;">Already have an account? Sign in</a>
+        </div>
+      </form>
+
+      <div class="auth-state" id="authState" style="display:none">
+        <strong>You are signed in</strong>
+        <p id="signedInEmail"></p>
+        <button class="btn btn-dark" onclick="logoutUser()">Sign Out</button>
       </div>
 
-      <button class="btn btn-dark" onclick="closePortal()">
-        Return to Website
-      </button>
+      <p class="auth-message" id="authMessage" role="status" aria-live="polite"></p>
 
+      <div class="portal-message">
+        This is a website test account only, not a bank account.
+        Do not use banking passwords, PINs, OTP codes, card details
+        or other financial information here.
+      </div>
+
+      <button class="btn btn-outline" onclick="closePortal()">Return to Website</button>
+      <p class="auth-small">NEXORA BANK is a website concept. This login does not provide banking, deposits, balances, transfers or access to financial accounts.</p>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-
 <footer class="footer">
   <div class="container">
-
     <div class="footer-grid">
-
       <div>
         <h3>NEXORA BANK</h3>
         <p>Banking Beyond Boundaries.</p>
-        <p>
-          A proposed digital banking concept
-          focused on innovation and convenience.
-        </p>
+        <p>A proposed digital banking concept focused on innovation and convenience.</p>
       </div>
-
       <div>
         <h3>Explore</h3>
         <a href="#home">Home</a>
@@ -1137,38 +480,91 @@ button {
         <a href="#about">About Us</a>
         <a href="#currencies">Currencies</a>
       </div>
-
       <div>
         <h3>Information</h3>
         <a href="#faq">FAQs</a>
         <a href="#contact">Contact</a>
         <a href="#home">Back to Top</a>
       </div>
-
     </div>
-
     <div class="footer-bottom">
       <span>© 2026 NEXORA BANK. All rights reserved.</span>
       <span>Banking Beyond Boundaries.</span>
     </div>
-
   </div>
 </footer>
 
-<script>
-function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("open");
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  sendPasswordResetEmail,
+  onAuthStateChanged,
+  signOut,
+  updateProfile,
+  setPersistence,
+  browserLocalPersistence,
+  browserSessionPersistence
+} from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDF2qwszBILMgETEAx7nJ7VLt-8p-V4nZw",
+  authDomain: "nexora-bank-7239.firebaseapp.com",
+  projectId: "nexora-bank-7239",
+  storageBucket: "nexora-bank-7239.firebasestorage.app",
+  messagingSenderId: "966307376534",
+  appId: "1:966307376534:web:ccbbb8b333e746970bc1b7",
+  measurementId: "G-RLTFCSR8P6"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const el = id => document.getElementById(id);
+
+function showMessage(message,type="") {
+  const box = el("authMessage");
+  box.textContent = message;
+  box.className = "auth-message" + (type ? " " + type : "");
 }
 
-function closeMenu() {
-  document.getElementById("navLinks").classList.remove("open");
+function friendlyError(error) {
+  const messages = {
+    "auth/email-already-in-use":"That email already has a website account. Try signing in.",
+    "auth/invalid-email":"Please enter a valid email address.",
+    "auth/weak-password":"Choose a stronger password with at least 6 characters.",
+    "auth/user-not-found":"No website account was found for that email.",
+    "auth/wrong-password":"The email or password is incorrect.",
+    "auth/invalid-credential":"The email or password is incorrect.",
+    "auth/too-many-requests":"Too many attempts. Please wait and try again later.",
+    "auth/network-request-failed":"Network problem. Check your internet connection.",
+    "auth/operation-not-allowed":"Email/Password sign-in is not enabled in Firebase.",
+    "auth/unauthorized-domain":"This website domain is not authorized in Firebase Authentication."
+  };
+  return messages[error.code] || "Something went wrong. Please try again.";
 }
 
-function toggleFaq(element) {
+function setBusy(id,busy,busyText,normalText) {
+  const button = el(id);
+  button.disabled = busy;
+  button.textContent = busy ? busyText : normalText;
+}
+
+window.toggleMenu = function() {
+  el("navLinks").classList.toggle("open");
+};
+
+window.closeMenu = function() {
+  el("navLinks").classList.remove("open");
+};
+
+window.toggleFaq = function(element) {
   const item = element.parentElement;
   const wasOpen = item.classList.contains("active");
 
-  document.querySelectorAll(".faq-item").forEach(function(faq) {
+  document.querySelectorAll(".faq-item").forEach(faq => {
     faq.classList.remove("active");
     const symbol = faq.querySelector(".faq-question span");
     if (symbol) symbol.textContent = "+";
@@ -1179,50 +575,144 @@ function toggleFaq(element) {
     const symbol = element.querySelector("span");
     if (symbol) symbol.textContent = "−";
   }
-}
+};
 
-function openPortal(type) {
-  closeMenu();
-
-  document.getElementById("mainSite").style.display = "none";
+window.openPortal = function(type) {
+  window.closeMenu();
+  el("mainSite").style.display = "none";
   document.querySelector(".navbar").style.display = "none";
   document.querySelector(".topbar").style.display = "none";
   document.querySelector(".footer").style.display = "none";
+  el("portal").style.display = "block";
 
-  const portal = document.getElementById("portal");
-  const title = document.getElementById("portalTitle");
-  const description = document.getElementById("portalDescription");
-  const message = document.getElementById("portalMessage");
+  if (type === "register") window.showRegister();
+  else window.showLogin();
 
-  if (type === "login") {
-    title.textContent = "Customer Login";
-    description.textContent =
-      "The NEXORA customer login system is not yet available.";
+  window.scrollTo(0,0);
+};
 
-    message.textContent =
-      "There are currently no customer accounts. Please do not enter banking credentials.";
-  } else {
-    title.textContent = "Get Started with NEXORA";
-    description.textContent =
-      "Thank you for your interest in our platform.";
-
-    message.textContent =
-      "Account registration is not available. It requires an authorized banking partner and the necessary regulatory approvals.";
-  }
-
-  portal.style.display = "block";
-  window.scrollTo(0, 0);
-}
-
-function closePortal() {
-  document.getElementById("portal").style.display = "none";
-  document.getElementById("mainSite").style.display = "block";
+window.closePortal = function() {
+  el("portal").style.display = "none";
+  el("mainSite").style.display = "block";
   document.querySelector(".navbar").style.display = "block";
   document.querySelector(".topbar").style.display = "block";
   document.querySelector(".footer").style.display = "block";
+  window.scrollTo(0,0);
+};
 
-  window.scrollTo(0, 0);
-}
+window.showLogin = function() {
+  el("portalTitle").textContent = "Customer Login";
+  el("portalDescription").textContent = "Sign in to your NEXORA website account.";
+  el("loginForm").style.display = "block";
+  el("registerForm").style.display = "none";
+  el("authMessage").textContent = "";
+  el("authState").style.display = auth.currentUser ? "block" : "none";
+};
+
+window.showRegister = function() {
+  el("portalTitle").textContent = "Create Your Account";
+  el("portalDescription").textContent = "Create a website test account using your email.";
+  el("loginForm").style.display = "none";
+  el("registerForm").style.display = "block";
+  el("authMessage").textContent = "";
+  el("authState").style.display = auth.currentUser ? "block" : "none";
+};
+
+window.togglePassword = function(inputId,checkbox) {
+  el(inputId).type = checkbox.checked ? "text" : "password";
+};
+
+window.registerUser = async function(event) {
+  event.preventDefault();
+
+  const name = el("registerName").value.trim();
+  const email = el("registerEmail").value.trim();
+  const password = el("registerPassword").value;
+
+  if (!name) {
+    showMessage("Please enter a display name.","error");
+    return;
+  }
+
+  setBusy("registerButton",true,"Creating account...","Create Website Account");
+  showMessage("Creating your website account...");
+
+  try {
+    const result = await createUserWithEmailAndPassword(auth,email,password);
+    await updateProfile(result.user,{displayName:name});
+    el("registerForm").reset();
+    showMessage("Your website account was created successfully.","success");
+  } catch(error) {
+    showMessage(friendlyError(error),"error");
+  } finally {
+    setBusy("registerButton",false,"Creating account...","Create Website Account");
+  }
+};
+
+window.loginUser = async function(event) {
+  event.preventDefault();
+
+  const email = el("loginEmail").value.trim();
+  const password = el("loginPassword").value;
+  const remember = el("rememberMe").checked;
+
+  setBusy("loginButton",true,"Signing in...","Sign In");
+  showMessage("Signing you in...");
+
+  try {
+    await setPersistence(
+      auth,
+      remember ? browserLocalPersistence : browserSessionPersistence
+    );
+    await signInWithEmailAndPassword(auth,email,password);
+    el("loginForm").reset();
+    el("rememberMe").checked = remember;
+    showMessage("You are now signed in.","success");
+  } catch(error) {
+    showMessage(friendlyError(error),"error");
+  } finally {
+    setBusy("loginButton",false,"Signing in...","Sign In");
+  }
+};
+
+window.resetPassword = async function() {
+  const email = el("loginEmail").value.trim();
+
+  if (!email) {
+    showMessage("Enter your email address first, then tap Forgot password again.","error");
+    el("loginEmail").focus();
+    return;
+  }
+
+  try {
+    await sendPasswordResetEmail(auth,email);
+    showMessage("If an account exists for that email, Firebase has sent a password reset email. Check your inbox and spam folder.","success");
+  } catch(error) {
+    showMessage(friendlyError(error),"error");
+  }
+};
+
+window.logoutUser = async function() {
+  try {
+    await signOut(auth);
+    showMessage("You have signed out.","success");
+    window.showLogin();
+  } catch(error) {
+    showMessage(friendlyError(error),"error");
+  }
+};
+
+onAuthStateChanged(auth,user => {
+  if (user) {
+    el("authState").style.display = "block";
+    el("signedInEmail").textContent =
+      (user.displayName ? user.displayName + " — " : "") +
+      (user.email || "Signed-in website user");
+  } else {
+    el("authState").style.display = "none";
+    el("signedInEmail").textContent = "";
+  }
+});
 </script>
 
 </body>
